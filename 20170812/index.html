@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="follow, all" />
+<meta name="language" content="en" />
+
+<title> Homepage By GZL</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+ <script type="text/javascript" src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" src="js/jquery.imgFade.js"></script>
+
+<!-- 标题图片 -->
+<style type="text/css">
+#header #title a {
+/*background: url(http://jonmccormack.info/wp-content/uploads/2012/03/banner.png) no-repeat;*/
+	background: url(img/banner.png) no-repeat;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center center;
+	background-size: cover;
+	border-radius: 10px; 
+}
+body{
+	background-image:url(images/bg.jpg);
+	background-position:center top;
+	background-attachment:fixed;
+	background-size:cover;
+}
+</style>
+
+
+<!-- 标题菜单下拉图标 -->
+<script type="text/javascript"> 
+	var $j = jQuery.noConflict();
+    $j(document).ready(function() { 
+        $j('.menu').superfish(); 
+    }); 
+</script>
+
+<!-- 轮播图和页尾图片大小 -->
+<script type="text/javascript">
+	var $j = jQuery.noConflict();
+	$j(function(){
+		$j('#slider1').anythingSlider({
+			width           : 960,
+			height          : 500,
+			delay           : 10000,
+			resumeDelay     : 10000,
+			startStopped    : false,
+			autoPlay        : true,
+			autoPlayLocked  : false,
+			easing          : "swing",
+			onSlideComplete : function(slider){
+				// alert('Welcome to Slide #' + slider.currentPage);
+			}
+		});
+		$j(".feature_video").hover(function(){
+		    $j('#slider1').data('AnythingSlider').startStop(false); // this stops the slideshow
+		});
+		$j(".arrow").click(function(){
+		    $j('#slider1').data('AnythingSlider').startStop(true); // this starts the slideshow
+		});
+	});
+</script>
+
+
+<!-- 给页尾的图片加遮罩 -->
+<script type="text/javascript">
+	var $j = jQuery.noConflict();
+	$j(function() {
+		$j().imgFade();
+	});
+</script>
+
+</head>
+
+<body class="home blog do-etfw">
+
+
+
+<div id="wrap" style="opacity: 0.9">
+
+<div id="header">
+
+	<h1 id="title"><a href="#" title="Home">Gong Zhilin</a></h1>
+    
+</div>
+
+<div id="navbar">
+
+	<div class="menu">
+	<ul id="menu-main" class="menu">
+		<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-117"><a href="#">Home</a></li>
+		<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="#">Accepted Papers</a></li>
+		<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="#">Attending & Visa</a></li>
+		<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-96"><a href="#">Program</a>
+		<ul  class="sub-menu">  
+			<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="#">Conference Overview</a></li>
+			<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="#">Session Schedule</a></li>
+			<li id="menu-item-226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-226"><a href="#">Key Speakers</a></li>
+			<!-- <li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-314"><a href="http://jonmccormack.info/about/site-map/">Site Map</a></li> -->
+		</ul>
+		</li>
+		<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="#">Registration</a></li>
+		<li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="#">Accommodation</a></li>
+		<li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="#">Student & Funding</a></li>
+	</ul>
+</div>
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="contenthome">
+
+	<div id="homepagetop">
+    	<!-- 轮播部分 -->
+		<div id="homeslider">
+            <ul id="slider1">
+                                                <li>
+                                            <a class="feature_img" href="http://ijcai-11.iiia.csic.es/" rel="pagemark" target="_blank"><img width="960" height="400" src="img/banner11.png" class="attachment-home-feature size-home-feature wp-post-image" alt="" /></a>
+                                        <div class="slideinfo">
+                        <h1><a href="#">IJCAI 2011</a></h1>
+                        <p>The twenty-second International Joint Conference on Artificial Intelligence was held in Barcelona in July 2011.</p>
+                    </div>
+                </li>
+                                                <li>
+                                            <a class="feature_img" href="http://dblp.uni-trier.de/db/conf/ijcai/ijcai2013.html" rel="pagemark" target="_blank"><img width="960" height="420" src="img/banner13.png" class="attachment-home-feature size-home-feature wp-post-image" alt="" /></a>
+                                        <div class="slideinfo">
+                        <h1><a href="#">IJCAI 2013</a></h1>
+                        <p>The twenty-third International Joint Conference on Artificial Intelligence was held in Beijing in August 2013.</p>
+                    </div>
+                </li>
+                                                <li>
+                                            <a class="feature_img" href="http://www.ijcai-15.org/" rel="pagemark" target="_blank"><img width="960" height="420" src="img/banner15.png" class="attachment-home-feature size-home-feature wp-post-image" alt="" /></a>
+                                        <div class="slideinfo">
+                        <h1><a href="#">IJCAI 2015</a></h1>
+                        <p>IJCAI-15 was held in Buenos Aires, Argentina from July 25th to July 31st, 2015.</p>
+                    </div>
+                </li>
+                <li>
+                                            <a class="feature_img" href="http://www.ijcai-16.org/" rel="pagemark" target="_blank"><img width="960" height="420" src="img/banner16.png" class="attachment-home-feature size-home-feature wp-post-image" alt="" /></a>
+                                        <div class="slideinfo">
+                        <h1><a href="#">IJCAI 2016</a></h1>
+                        <p>Welcome to the 25th International Joint Conference on Artificial Intelligence IJCAI-16!</p>
+                    </div>
+                </li>
+                <li>
+                                            <a class="feature_img" href="http://ijcai-17.org/" rel="pagemark" target="_blank"><img width="960" height="420" src="img/banner17.png" class="attachment-home-feature size-home-feature wp-post-image" alt="" /></a>
+                                        <div class="slideinfo">
+                        <h1><a href="#">IJCAI 2017</a></h1>
+                        <p>The 26th International Joint Conference on Artificial Intelligence will be held in Melbourne, Australia in August 2017.</p>
+                    </div>
+                </li>
+                            </ul>
+        </div>
+        
+    </div>
+			<!-- 页尾图片部分 -->
+	    <div id="homepage">
+            
+    			                                
+            <div class="homebox first">
+                
+                                        			
+                                    <div class="home_img"><a href="#" rel="pagemark"><img width="228" height="200" src="img/m1.jpg" class="attachment-home-thumbnail size-home-thumbnail wp-post-image" alt="Improvisational interfaces" /></a></div>
+                                
+                <div class="homeboxinfo">
+                    <h2><a href="#" rel="pagemark">Michael Wooldridge</a></h2>
+                     <p>President, Board of Trustees, 2015-2017  <br /> Conference Chair, IJCAI-15</p>
+                </div>
+                
+            </div>
+            
+		                        
+            <div class="homebox second">
+                
+                                        			
+                                    <div class="home_img"><a href="#" rel="pagemark"><img width="228" height="200" src="img/m2.jpeg" class="attachment-home-thumbnail size-home-thumbnail wp-post-image" alt="" /></a></div>
+                                
+                <div class="homeboxinfo">
+                    <h2><a href="#" rel="pagemark">Francesca Rossi</a></h2>
+                     <p>Past President <br /> Trustee, 2009-2017</p>
+                </div>
+                
+            </div>
+            
+		                        
+            <div class="homebox third">
+                
+                                        			
+                                    <div class="home_img"><a href="#" rel="pagemark"><img width="228" height="200" src="img/m3.png" alt="" sizes="(max-width: 228px) 100vw, 228px" /></a></div>
+                                
+                <div class="homeboxinfo">
+                    <h2><a href="#" rel="pagemark">Subbarao Kambhampati</a></h2>
+                     <p>Trustee, 2013-2018 <br /> Program Chair, IJCAI-16</p>
+                </div>
+                
+            </div>
+            
+		                        
+            <div class="homebox fourth">
+                
+                                        			
+                                    <div class="home_img"><a href="#" rel="pagemark"><img width="228" height="200" src="img/m4.jpg" class="attachment-home-thumbnail size-home-thumbnail wp-post-image" alt="" sizes="(max-width: 228px) 100vw, 228px" /></a></div>
+                                
+                <div class="homeboxinfo">
+                    <h2><a href="#" rel="pagemark">Fahiem Bacchus</a></h2>
+                    <p>Trustee, 2014-2019 <br /> Conference Chair, IJCAI-17</p>
+                </div>
+                
+            </div>
+            
+		                
+	</div>
+   	
+</div>
+
+<!-- begin footer -->
+
+<div style="clear:both;"></div>
+
+	<div id="footer">
+
+
+		<div class="footerleft">
+
+			<p>Copyright &copy; 2017 &middot; All Rights Reserved &middot; GongZhilin</p>
+
+			<!-- <p><a href="http://jonmccormack.info/feed/" target="_blank">RSS Feed</a> </p> -->
+
+		</div>	
+
+	</div>
+    
+</div>
+
+
+</body>
+
+</html>
