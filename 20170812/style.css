@@ -494,7 +494,7 @@ ul.menu li li li.sfHover ul {
 	height:	10px;
 	text-indent: -9999px;
 	overflow: hidden;
-	background:	url(images/arrows-ffffff.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	background:	url(images/arrows.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
 	}
 a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 	top: 14px;
